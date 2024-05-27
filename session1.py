@@ -54,3 +54,16 @@ print(GST_pie)
 minis = 5000
 maxis = 2.5 * minis
 print("the value for maxis is:", 4.5*maxis)
+
+
+bits = 1
+by_tes = 8 * bits
+kilo_bytes = 1024 * by_tes
+mega_bytes = 1024 * kilo_bytes
+giga_bytes = 1024 * mega_bytes
+terra_bytes = 1024 * giga_bytes
+
+print("The memory allocation units are as follows:")
+print("1:", bits, "2:",by_tes, "3:", kilo_bytes, "4:", mega_bytes, "5:", giga_bytes, "6:", terra_bytes)
+print("the sum of all this is: ", bits+by_tes+kilo_bytes+mega_bytes+giga_bytes+terra_bytes)
+
