@@ -1,4 +1,4 @@
-comp = 2000
+dcomp = 2000
 mobile = 1600
 lapt = 1300
 earp = 200
