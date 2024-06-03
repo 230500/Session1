@@ -29,3 +29,10 @@ continents = ["Asia", "Africa", "Australia", "Europe", "Antartica", "South Ameri
 home = "Asia"                            # Assigning home as Asia
 for continents in continents:            # Using for loop for continents from continents subset
     print(f"I am from {home}")           # Printing "home" as a print statement
+
+#Topic: Calculating a running total
+total = 0                  # Using total and assigning value as "0".
+for num in range(1,6):     # using range between number 1 and 6.
+    total += num           # Using increment operator to increase the value of total (which was intially "0") in range from 1 to 6.
+    print(f"The current total is: {total}")  # this statement will print (0+1) which is 1 and then the for loop will execute again to give total = 1+ 2 = 3.
+    
