@@ -53,3 +53,6 @@ while number != -1:       # using while loop until user gives input number as -1
     number = int(input("Enter any number(or -1 to quit):"))     # Asking user to input an integer as an input. or simply put -1 to quit.
     if number != -1:           # check condition if the input number is not equal to -1 then we execute the print statement below to print the entered number by the user.
         print(f"The result is: {number}")
+
+
+
