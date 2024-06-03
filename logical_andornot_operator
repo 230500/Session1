@@ -1,0 +1,25 @@
+#Logical and operator
+
+stu = True           # Stating the condition if the user is student as "stu = true".
+ID = True            # Stating the condition if the user has studentID as "ID = true".
+if stu and ID:       # using "and" as a logical operator to check if both "stu" and "ID" satisfies.
+    print("Eligible for student discount ")    # If satisfies, then print eligible for discount.
+else:
+    print("Not Eligible for student discount ")  # If not, print not eligible for discount.
+
+# Logical or operator
+stu = False           # Stating the condition if the user is student as "stu = true or false.
+ID = False            # Stating the condition if the user has studentID as "ID = true or false ".
+if stu or ID:         # using "or" as a logical operator to check if any one of them "stu" and "ID" satisfies.
+    print("Eligible for student discount ")    # If any one of them satisfies, then print eligible for discount.
+else:
+    print("Not Eligible for student discount ")  # If none of them satisfies, print not eligible for discount.
+
+#LOgical Not Operator
+
+stu = True        # Stating the condition if the user is student as "stu = true".
+ID = True           # Stating the condition if the user has studentID as "ID = true".
+if not stu and ID:   # using "and" as a logical operator to check if both "stu" and "ID" satisfies.
+    print("Eligible for student discount ")    # If satisfies, then print eligible for discount.
+else:
+    print("Not Eligible for student discount ")  # If not, print not eligible for discount
