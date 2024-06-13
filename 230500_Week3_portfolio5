@@ -64,6 +64,58 @@ print(rom_numm().int_to_rom(9))
 # Portfolio Assignment : 5
 # ACTIVITY 3:
 
+class ran_lst:             # Creating a random list as "ran_lst"
+    def __init__(self):    # Using Constructor to intialise objects state as its parameter(self).
+        self.rlst = []     # Initializing an empty list to ran_lst class.
+
+    def add(self, item):   # Defining add function to add item (takes one argument) to the random list (rlst).
+        self.rlst.append(item)
+
+    def remove(self, item): # Defining remove function to remove item from the random list (rlst).
+        if item in self.rlst:
+            self.rlst.remove(item)
+            print(f"{item} removed from the list.") # If found prints, "corresponding item removed from the list".
+        else:
+            print(f"{item} not found in the list.") # Else prints, "item not found in the list".
+
+    def display(self):  # Defining display function to display all the items in the list (rlst).
+        return self.rlst
+
+random_lst = ran_lst()    # To Create an object for pre-defined "ran_lst" class
+
+while True:     # print statements to ask the user to input following actions:
+    print("\nSelect an option to perform the following operations:")
+    print("1. Add an item to the list")                     # 1 to add an item to the list.
+    print("2. Remove an item from the list")                # 2 to remove an item from the list.
+    print("3. Display all the items in the list created")   # 3 to display all items in the list.
+    print("4. Press this button to exit")                   # 4 to exit from the operation.
+
+    select = input("Enter your choice (1/2/3/4): ")      # Giving user option to select.
+
+    if select == '1':             # If user types 1 then it will prompt to adding element to the list.
+        item = input("Enter item to add in the list: ")  # Aks user to enter item to add to the list.
+        random_lst.add(item)
+        print(f"{item} successfully added to the list.")  # Prints items successfully added to the list.
+
+    elif select == '2':   # If user types 2 then it will prompt to removing an element from the list.
+        item = input("Enter item to remove from the list: ")  # Ask user to input item that he/she wants to remove from the list.
+        random_lst.remove(item)
+        print(f"{item} successfully removed from the list.") # Prints items successfully removed from the list.
+
+    elif select == '3':   # If user types 3 then it will prompt to displaying all elements in the list.
+        current_list = random_lst.display()
+        print("Current list:", current_list)   # Will print items in the current list.
+
+    elif select == '4':              # If user inputs 4, the operation will exit.
+        print("Exiting program.")
+        break
+
+    else:
+        print("Invalid choice. Please enter a valid option (1/2/3/4).")  # Ask user to enter option for corresponding operations.
+
+print("Final list:", random_lst.display())   # Display the final result after commencing operation.
+
+
 
 
 
