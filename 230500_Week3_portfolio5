@@ -1,0 +1,69 @@
+# Student Name: Bibek Shrestha
+# StudentID: 230500
+# Portfolio Assignment : 5
+# ACTIVITY 1:
+
+class cir():       # "Class" defined as "cir" that represents circle and takes one argument.
+    def __init__(self, raa):   # Defining "__init__" initializes the circle object.
+        self.rad = raa   # Assigning "radius" as "raa" for circle which is done by "self.rad"
+                         # " which defines radius of its own (Circle).
+    def area(self):      # Defining another function called area.
+        return self.rad ** 2 * 3.14        # Here "area(self)" is area of the circle.
+                                           # " value of "Pi = 3.14" and area = pi * (radius)^2
+    def perimeter(self):                   # "perimeter(self) is perimeter of the circle.
+        return 2 * self.rad * 3.14         # Perimeter = 2 * pi * radius
+
+
+crl = cir(6)            # Here, "crl" is the new assigned circle that calls the pre-defied
+                        #"  function called "cir" at the beginning of the program and takes one argument (radius).
+print(crl.area())       # printing area of the circle
+print(crl.perimeter())  # Printing the perimeter of the circle.
+
+
+# Student Name: Bibek Shrestha
+# StudentID: 230500
+# Portfolio Assignment : 5
+# ACTIVITY 2:
+
+
+class rom_numm:         # Define a class roman numbers as "rom_numm"
+    def int_to_rom(self, n1):  # Defining a function as "int_to_rom" takes "n1" argument.
+        val = [                # Assigning integer values as a list.
+            13, 12, 11, 10,
+            9, 8, 7, 6,        # NOTE: The integer and its roman equivalent both are adjusted and modified as per user.
+            5, 4, 3, 2,
+            1
+            ]
+        syb = [                         # Assigning roman values as a list.
+            "XIII", "XII", "XI", "X",
+            "IX", "VIII", "VII", "VI",
+            "V", "IV", "III", "II",
+            "I"
+            ]
+        rom_numm = ''
+        j = 0              # Intializing value of j as "0" to track position in "syb" and "val" lists.
+        while  n1 > 0:     # While number(n1) is greater than "0" to start.
+            for _ in range(n1 // val[j]):  # Calculating range(n1 // val[j]) to know the position of
+                                           # " val[j] and corresponding syb[j] from the list.
+                rom_numm += syb[j]         # Adds roman list "syb[j]" to "rom_numm"
+                n1 -= val[j]               # Subtracts corresponding value of "val[j]" to "n1".
+            j += 1                         # Increment of "j" to for next iteration.
+        return rom_numm                    # Returns "rom_numm" as value after loop ends.
+
+print(rom_numm().int_to_rom(7))            # Print output for roman number '7', '13' and '9' as 'VII', 'XIII', and 'IX'.
+print(rom_numm().int_to_rom(13))
+print(rom_numm().int_to_rom(9))
+
+
+
+
+
+
+# Student Name: Bibek Shrestha
+# StudentID: 230500
+# Portfolio Assignment : 5
+# ACTIVITY 3:
+
+
+
+
