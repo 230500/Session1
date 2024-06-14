@@ -1,0 +1,88 @@
+
+Q 1.
+
+# Student Name: Bibek Shrestha
+# StudentID: 230500
+# ACTIVITY 1:
+
+
+def wrd(word):   # Defining a function "wrd" that take one argument as "word"
+
+
+   lg = len(word)  # The length of "word" (string) is store it in the variable "lg".
+
+
+   if lg > 2:         # To check if length of "word" is greater than 2.
+       if word[-3:] == 'ing':   # If the input "word(string)" ends with "ing" 
+					  # “ then replace "ing" and add "ly" at last of  
+					  # “ the string.
+           word += 'ly'
+       else:         # Else, nothing at the end of the string then add "ing".
+           word += 'ing'
+
+
+   return word
+# Calling the pre-defined function "wrd" to take multiple arguments and print the result.
+print(wrd('hi'))       # Result: 'hi'
+print(wrd('swim'))     # Result: 'swiming'
+print(wrd('bing'))     # Result: 'bingly'
+
+
+Q 2.
+# Portfolio Assignment : 4
+# Activity 2:
+
+def fun_str(z_str):         # A string function is defined as "fun_str(z_str)"
+   z_str = z_str.lower()   # This will convert the input string to lowercase so
+                           #" both 'z' and 'Z' are taken into account.
+                             # 'no_z' is notation for number of z.
+   no_z = z_str.count('z')   # Using count method to count the number of 'z'
+                             #" in the string
+   return no_z               # This will return the value to the function.
+
+
+z_str = input("Insert a word containing 'z': ") # Ask the user to input a word
+                                             #" that contains the letter 'z'.
+
+
+no_z = fun_str(z_str)    # This will count the number of 'z'
+print(f"The total number of 'z' in this word is: {no_z}") # This will print 
+                                   #” the number of 'z' in the input string.
+
+
+
+Q 3.
+Answer:
+CODE:
+# Activity 3:
+
+def ludsy(str1):            # Defining a function as ludsy(str1).
+    # Initialising a value for different character types "lc_ct" as lowercase count
+    #" "uc_ct" as uppercase count, "dgts_ct" as digits count and "spsy_ct" is special symbol count.
+    lc_ct = 0           # Initialising lowercase count = 0
+    uc_ct = 0           # Initialising uppercase count = 0
+    dgts_ct = 0         # Initialising digits count = 0
+    spsy_ct = 0         # Initialising special symbol count = 0
+
+    for char in str1:   # using 'for loop' for each character in the user input string
+        if char.islower():          # Check 'if' the character is lowercase.
+            lc_ct += 1              # If yes it will move to next character.
+        elif char.isupper():        # Check 'if' the character is uppercase.
+            uc_ct += 1              # If yes it will move to next character.
+        elif char.isdigit():        # Check 'if' the character is digits.
+            dgts_ct += 1            # If yes it will move to next character.
+        else:
+            spsy_ct += 1            # Else check the character is special symbol.
+
+    return lc_ct, uc_ct, dgts_ct, spsy_ct   # This will return all the value inside 'for loop'.
+
+str1 = input("Enter a string with mixed characters: ")  # Ask user to input a string with mixed characters.
+
+lc_ct, uc_ct, dgts_ct, spsy_ct = ludsy(str1)   # This line counts all the character types present in the string.
+print(f"Lowercase count = {lc_ct}")         # Prints the total lower case count in the string.
+print(f"Uppercase count = {uc_ct}")         # Prints the total upper case count in the string.
+print(f"Digit count = {dgts_ct}")           # Prints the total  digits count in the string.
+print(f"Special symbol count = {spsy_ct}")  # Prints the total special symbol count in the string.
+
+
+Q 4.
